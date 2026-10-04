@@ -1,0 +1,10 @@
+{
+  "sound_event": {
+    "sound_id": "gameoverse_soundtrack:music_disc.cobble_man"
+  },
+  "description": {
+    "translate": "jukebox_song.gameoverse_soundtrack.cobble_man"
+  },
+  "length_in_seconds": 369.7,
+  "comparator_output": 4
+}

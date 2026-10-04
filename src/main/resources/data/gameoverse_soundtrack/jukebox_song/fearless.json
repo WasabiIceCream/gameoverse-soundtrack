@@ -1,0 +1,10 @@
+{
+  "sound_event": {
+    "sound_id": "gameoverse_soundtrack:music_disc.fearless"
+  },
+  "description": {
+    "translate": "jukebox_song.gameoverse_soundtrack.fearless"
+  },
+  "length_in_seconds": 395.8,
+  "comparator_output": 11
+}

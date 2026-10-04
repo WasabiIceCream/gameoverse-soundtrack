@@ -1,0 +1,10 @@
+{
+  "sound_event": {
+    "sound_id": "gameoverse_soundtrack:music_disc.heavenly_flight"
+  },
+  "description": {
+    "translate": "jukebox_song.gameoverse_soundtrack.heavenly_flight"
+  },
+  "length_in_seconds": 352.0,
+  "comparator_output": 14
+}

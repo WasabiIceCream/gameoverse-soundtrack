@@ -1,0 +1,10 @@
+{
+  "sound_event": {
+    "sound_id": "gameoverse_soundtrack:music_disc.indevia"
+  },
+  "description": {
+    "translate": "jukebox_song.gameoverse_soundtrack.indevia"
+  },
+  "length_in_seconds": 384.0,
+  "comparator_output": 2
+}

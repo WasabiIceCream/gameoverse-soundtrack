@@ -1,0 +1,10 @@
+{
+  "sound_event": {
+    "sound_id": "gameoverse_soundtrack:music_disc.afterlife"
+  },
+  "description": {
+    "translate": "jukebox_song.gameoverse_soundtrack.afterlife"
+  },
+  "length_in_seconds": 349.3,
+  "comparator_output": 1
+}

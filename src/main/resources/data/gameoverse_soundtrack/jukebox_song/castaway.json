@@ -1,0 +1,10 @@
+{
+  "sound_event": {
+    "sound_id": "gameoverse_soundtrack:music_disc.castaway"
+  },
+  "description": {
+    "translate": "jukebox_song.gameoverse_soundtrack.castaway"
+  },
+  "length_in_seconds": 187.6,
+  "comparator_output": 2
+}

@@ -1,0 +1,10 @@
+{
+  "sound_event": {
+    "sound_id": "gameoverse_soundtrack:music_disc.disc_viii"
+  },
+  "description": {
+    "translate": "jukebox_song.gameoverse_soundtrack.disc_viii"
+  },
+  "length_in_seconds": 163.7,
+  "comparator_output": 5
+}

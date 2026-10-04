@@ -1,0 +1,170 @@
+[
+  {
+    "slug": "afterlife",
+    "title": "Afterlife",
+    "seconds": 349.3,
+    "comparator": 1
+  },
+  {
+    "slug": "castaway",
+    "title": "Castaway",
+    "seconds": 187.6,
+    "comparator": 2
+  },
+  {
+    "slug": "classic_blues",
+    "title": "Classic Blues",
+    "seconds": 147.8,
+    "comparator": 3
+  },
+  {
+    "slug": "cobble_man",
+    "title": "Cobble Man",
+    "seconds": 369.7,
+    "comparator": 4
+  },
+  {
+    "slug": "disc_viii",
+    "title": "Disc VIII",
+    "seconds": 163.7,
+    "comparator": 5
+  },
+  {
+    "slug": "disc_xv",
+    "title": "Disc XV",
+    "seconds": 155.4,
+    "comparator": 6
+  },
+  {
+    "slug": "dreamscape",
+    "title": "Dreamscape",
+    "seconds": 242.5,
+    "comparator": 7
+  },
+  {
+    "slug": "eclipsed",
+    "title": "Eclipsed",
+    "seconds": 399.3,
+    "comparator": 8
+  },
+  {
+    "slug": "endgame",
+    "title": "Endgame",
+    "seconds": 263.3,
+    "comparator": 9
+  },
+  {
+    "slug": "eternal_suspense",
+    "title": "Eternal Suspense",
+    "seconds": 292.1,
+    "comparator": 10
+  },
+  {
+    "slug": "fearless",
+    "title": "Fearless",
+    "seconds": 395.8,
+    "comparator": 11
+  },
+  {
+    "slug": "flight_school",
+    "title": "Flight School",
+    "seconds": 244.5,
+    "comparator": 12
+  },
+  {
+    "slug": "heartbreaker",
+    "title": "Heartbreaker",
+    "seconds": 318.4,
+    "comparator": 13
+  },
+  {
+    "slug": "heavenly_flight",
+    "title": "Heavenly Flight",
+    "seconds": 352.0,
+    "comparator": 14
+  },
+  {
+    "slug": "heros_journey",
+    "title": "Hero's Journey",
+    "seconds": 266.3,
+    "comparator": 15
+  },
+  {
+    "slug": "home",
+    "title": "Home",
+    "seconds": 291.8,
+    "comparator": 1
+  },
+  {
+    "slug": "indevia",
+    "title": "Indevia",
+    "seconds": 384.0,
+    "comparator": 2
+  },
+  {
+    "slug": "jank_zone",
+    "title": "Jank Zone",
+    "seconds": 364.8,
+    "comparator": 3
+  },
+  {
+    "slug": "kingslayer",
+    "title": "Kingslayer",
+    "seconds": 329.4,
+    "comparator": 4
+  },
+  {
+    "slug": "magnetic_circuit",
+    "title": "Magnetic Circuit",
+    "seconds": 193.7,
+    "comparator": 5
+  },
+  {
+    "slug": "mytheria",
+    "title": "Mytheria",
+    "seconds": 317.2,
+    "comparator": 6
+  },
+  {
+    "slug": "queue_the_madness",
+    "title": "Queue the Madness",
+    "seconds": 197.6,
+    "comparator": 7
+  },
+  {
+    "slug": "ruins",
+    "title": "Ruins",
+    "seconds": 358.9,
+    "comparator": 8
+  },
+  {
+    "slug": "snowshoe",
+    "title": "Snowshoe",
+    "seconds": 323.1,
+    "comparator": 9
+  },
+  {
+    "slug": "spaced_out",
+    "title": "Spaced Out",
+    "seconds": 371.5,
+    "comparator": 10
+  },
+  {
+    "slug": "the_traveler",
+    "title": "The Traveler",
+    "seconds": 262.3,
+    "comparator": 11
+  },
+  {
+    "slug": "tunnel_vision",
+    "title": "Tunnel Vision",
+    "seconds": 304.7,
+    "comparator": 12
+  },
+  {
+    "slug": "washed_away",
+    "title": "Washed Away",
+    "seconds": 325.5,
+    "comparator": 13
+  }
+]

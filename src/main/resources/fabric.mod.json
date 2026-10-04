@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "gameoverse_soundtrack",
+  "version": "${version}",
+
+  "name": "Gameoverse Soundtrack",
+  "description": "Music discs and background music by Soybean_56 (CC BY, youtube.com/@soybean_56), from Minecraft Infinite. The discs turn up in structure chests; the audio ships in the Gameoverse-Soundtrack resource pack.",
+  "authors": [
+    "WasabiIceCream"
+  ],
+  "contributors": [
+    "Soybean_56 (music)"
+  ],
+
+  "license": "MIT (code); music CC BY by Soybean_56",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.gameoverse.soundtrack.Soundtrack"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": ">=26.1",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}

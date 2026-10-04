@@ -1,0 +1,10 @@
+{
+  "sound_event": {
+    "sound_id": "gameoverse_soundtrack:music_disc.the_traveler"
+  },
+  "description": {
+    "translate": "jukebox_song.gameoverse_soundtrack.the_traveler"
+  },
+  "length_in_seconds": 262.3,
+  "comparator_output": 11
+}

@@ -1,0 +1,10 @@
+{
+  "sound_event": {
+    "sound_id": "gameoverse_soundtrack:music_disc.flight_school"
+  },
+  "description": {
+    "translate": "jukebox_song.gameoverse_soundtrack.flight_school"
+  },
+  "length_in_seconds": 244.5,
+  "comparator_output": 12
+}

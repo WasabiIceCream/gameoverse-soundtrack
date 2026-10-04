@@ -1,0 +1,10 @@
+{
+  "sound_event": {
+    "sound_id": "gameoverse_soundtrack:music_disc.tunnel_vision"
+  },
+  "description": {
+    "translate": "jukebox_song.gameoverse_soundtrack.tunnel_vision"
+  },
+  "length_in_seconds": 304.7,
+  "comparator_output": 12
+}
