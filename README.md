@@ -16,6 +16,8 @@ Two parts:
   biome. Night tracks play on the Overworld surface at night through a Music and Melody event, and a Music and Melody
   album "Minecraft Infinite, by Soybean_56" lists everything. The pack must load **above** Music and Melody's own pack
   (it replaces several of those pools), so it goes last in `resourcepackoverrides.json`.
+  Music and Melody's replaced pools also drop three tracks other mods add (Enderscape's Lullaby, Legacies and
+  Legends' Worn Away and If We Could Reverse Time); `RESTORE` in `tools/build.py` adds them back.
 
 The upstream files (github.com/VesuviusVenox/Classic-Resources) have Valley of Spirits under both its own name and
 Heavenly Flight's (the file matches the Valley of Spirits video, 351.98 s). The real Heavenly Flight is taken from
