@@ -2,8 +2,8 @@
 """Build Gameoverse-Soundtrack-<version>.zip (resource pack) and the mod's generated data from tools/cache/ (run
 tools/fetch.py first): Soybean_56's Minecraft Infinite music, CC BY (credit in the README, the album and the guide).
 
-- 28 music discs (29 files upstream; Heavenly Flight and Valley of Spirits are the same file, shipped once), converted
-  to mono so jukebox music fades with distance like vanilla discs.
+- 29 music discs (upstream's Heavenly Flight file is Valley of Spirits; the real Heavenly Flight is in tools/extra/),
+  converted to mono so jukebox music fades with distance like vanilla discs.
 - Background tracks, stereo as-is, added (replace: false) to existing pools: sky -> Aerial Hell's dimension music,
   void -> the outer End and Enderscape's biome pools, nether -> every Nether biome pool. Night tracks play through a
   Music and Melody event (Overworld, night, outside). The pack must load above Music and Melody's own pack, which
@@ -26,7 +26,12 @@ CHANNEL = 'https://www.youtube.com/channel/UCNfDsbAKPmUo0xFZxf2YjQQ'
 DISCS = ['Afterlife', 'Castaway', 'Classic Blues', 'Cobble Man', 'Disc VIII', 'Disc XV', 'Dreamscape', 'Eclipsed',
          'Endgame', 'Eternal Suspense', 'Fearless', 'Flight School', 'Heartbreaker', 'Heavenly Flight',
          "Hero's Journey", 'Home', 'Indevia', 'Jank Zone', 'Kingslayer', 'Magnetic Circuit', 'Mytheria',
-         'Queue the Madness', 'Ruins', 'Snowshoe', 'Spaced Out', 'The Traveler', 'Tunnel Vision', 'Washed Away']
+         'Queue the Madness', 'Ruins', 'Snowshoe', 'Spaced Out', 'The Traveler', 'Tunnel Vision', 'Valley of Spirits',
+         'Washed Away']
+# Upstream's "Heavenly Flight.ogg" is really Valley of Spirits (same file under both names, 351.98 s, matching the
+# Valley of Spirits video); the real Heavenly Flight comes from Soybean_56's YouTube video (NDu_3wdvNmk, CC BY),
+# kept in tools/extra/ since upstream doesn't have it.
+SOURCES = {'Heavenly Flight': HERE / 'extra' / 'Heavenly Flight.ogg'}
 BACKGROUND = {
     'sky': [f'skymusic/sky{i}' for i in range(1, 6)],
     'night': [f'nightmusic/night{i}' for i in range(1, 5)],
@@ -92,7 +97,7 @@ def main():
         s = slug(title)
         dst = assets / 'sounds' / 'disc' / f'{s}.ogg'
         dst.parent.mkdir(parents=True, exist_ok=True)
-        subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', str(CACHE / 'streaming' / f'{title}.ogg'), '-ac', '1',
+        subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', str(SOURCES.get(title, CACHE / 'streaming' / f'{title}.ogg')), '-ac', '1',
                         '-c:a', 'libvorbis', '-q:a', '5', str(dst)], check=True)
         sounds[f'music_disc.{s}'] = {'sounds': [{'name': f'{NS}:disc/{s}', 'stream': True}]}
         discs.append({'slug': s, 'title': title, 'seconds': round(duration(dst), 1), 'comparator': i % 15 + 1})

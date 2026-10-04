@@ -7,7 +7,7 @@ channel. The code here is MIT.
 
 Two parts:
 
-- **The mod** (both sides, small): 28 music discs, each a jukebox song "Soybean_56 - <title>". Every structure chest
+- **The mod** (both sides, small): 29 music discs, each a jukebox song "Soybean_56 - <title>". Every structure chest
   has a 2% chance to hold one (Locked Chests included, since they roll their structure's own table), they join the
   discs a creeper drops when a skeleton kills it, and they're in the Tools tab in creative.
 - **The resource pack** `Gameoverse-Soundtrack-<v>.zip` (client, all the audio, ~100 MB): the discs in mono (so a
@@ -17,8 +17,9 @@ Two parts:
   album "Minecraft Infinite, by Soybean_56" lists everything. The pack must load **above** Music and Melody's own pack
   (it replaces several of those pools), so it goes last in `resourcepackoverrides.json`.
 
-The upstream files (github.com/VesuviusVenox/Classic-Resources) list 29 disc tracks, but Heavenly Flight and Valley of
-Spirits are the same file; it ships once, as Heavenly Flight. The rest of that repo's music is Mojang's C418 soundtrack
+The upstream files (github.com/VesuviusVenox/Classic-Resources) have Valley of Spirits under both its own name and
+Heavenly Flight's (the file matches the Valley of Spirits video, 351.98 s). The real Heavenly Flight is taken from
+Soybean_56's YouTube video (NDu_3wdvNmk, marked CC BY) and kept in `tools/extra/`, since upstream doesn't have it. The rest of that repo's music is Mojang's C418 soundtrack
 under old names and is not used.
 
 ## Building
