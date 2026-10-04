@@ -8,6 +8,7 @@ tools/fetch.py first): Soybean_56's Minecraft Infinite music, CC BY (credit in t
   void -> the outer End and Enderscape's biome pools, nether -> every Nether biome pool. Night tracks play through a
   Music and Melody event (Overworld, night, outside). The pack must load above Music and Melody's own pack, which
   replaces several of those pools.
+- RESTORE: tracks other mods add that Music and Melody's pool replacements drop (Enderscape, Legacies and Legends).
 - A Music and Melody album crediting Soybean_56, and our own disc art (drawn here, not taken from the mod).
 - Mod side: src/main/resources/data/gameoverse_soundtrack/jukebox_song/*.json, the disc list for the mod, lang.
 """
@@ -46,6 +47,14 @@ APPEND = {
                             'music.enderscape.biome.veiled_woodlands']},
     'nether': {'minecraft': ['music.nether.nether_wastes', 'music.nether.crimson_forest', 'music.nether.warped_forest',
                              'music.nether.soul_sand_valley', 'music.nether.basalt_deltas']},
+}
+# Music and Melody's own pack replaces these pools and leaves out tracks other mods added; put them back.
+RESTORE = {
+    'enderscape': {
+        'music.enderscape.biome.veiled_woodlands': ['enderscape:music/biome/veiled_woodlands/lullaby'],
+        'music.enderscape.structure.stronghold': ['legacies_and_legends:music/structure/stronghold/worn_away',
+                                                  'legacies_and_legends:music/structure/stronghold/if_we_could_reverse_time'],
+    },
 }
 
 
@@ -115,10 +124,18 @@ def main():
             path = OUT / 'assets' / namespace / 'sounds.json'
             data = json.loads(path.read_text()) if path.exists() else {}
             for key in keys:
-                data[key] = {'replace': False, 'sounds': [dict(e, weight=1) for e in entries]}
+                data.setdefault(key, {'replace': False, 'sounds': []})['sounds'] += [dict(e, weight=1) for e in entries]
             path.parent.mkdir(parents=True, exist_ok=True)
             path.write_text(json.dumps(data, indent=2) + '\n')
     (assets / 'sounds.json').write_text(json.dumps(sounds, indent=2) + '\n')
+    for namespace, pools in RESTORE.items():
+        path = OUT / 'assets' / namespace / 'sounds.json'
+        data = json.loads(path.read_text()) if path.exists() else {}
+        for key, names in pools.items():
+            data.setdefault(key, {'replace': False, 'sounds': []})['sounds'] += [
+                {'name': n, 'stream': True, 'weight': 1} for n in names]
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(json.dumps(data, indent=2) + '\n')
 
     # Music and Melody: Overworld nights outside, and an album crediting Soybean_56
     events = assets / 'events'
